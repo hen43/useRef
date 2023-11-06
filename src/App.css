@@ -31,5 +31,5 @@ img{
 }
 
 .spin{
-  animation: rotate 1s linear;
+  animation: rotate 1s ease-in-out;
 }
