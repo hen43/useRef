@@ -8,8 +8,18 @@ function App() {
 
   let cookie = useRef('cookie');
 
+  var alreadySpinning = 0;
+
   let spin = () => {
-    cookie.current.classList.add('spin');
+    if (alreadySpinning === 0) {
+      alreadySpinning = 1;
+      cookie.current.classList.add('spin');
+
+      setTimeout(() => {
+        cookie.current.classList.remove('spin');
+        alreadySpinning = 0;
+      }, 1000)
+    }
   }
 
   return (

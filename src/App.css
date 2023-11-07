@@ -21,6 +21,10 @@ img{
   max-width: 20rem;
 }
 
+img:hover{
+  cursor:pointer;
+}
+
 @keyframes rotate{
   from{
     transform: rotate(0deg);
